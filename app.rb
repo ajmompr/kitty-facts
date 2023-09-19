@@ -15,4 +15,5 @@ end
 
 post("/next_hour") do
   "hello, next hour"
+  erb(:next_hr_results)
 end
