@@ -2,6 +2,6 @@ require "sinatra"
 require "sinatra/reloader"
 require "http"
 
-get("/") do
+post("/") do
   erb(:homepage)
 end
