@@ -10,6 +10,8 @@ post("/results") do
   @user_loc = params.fetch("user_location").capitalize
   @user_loc_encoded = @user_loc.gsub(" ","+")
 
+  @gmaps_url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + @user_loc_encoded + "&key=" + ENV.fetch("GMAPS_KEY")
+
   erb(:user_results)
 end
 
