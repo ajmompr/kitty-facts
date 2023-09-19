@@ -1,25 +1,26 @@
-<h1>What to Wear on Your Run!</h1>
-<h3>Current Conditions</h3>
-<%= params %>
+<h1> What to Wear on Your Run! </h1>
+<h3> Current Conditions </h3>
+
+<%= %>
 <dl>
-  <dt>Location</dt>
+  <dt> Location </dt>
   <dd> <%= @user_loc %> </dd>
-  <dt>Temperature</dt>
-  <dd></dd>
-  <dt>Humidity</dt>
-  <dd></dd>
-  <dt>Chance of Precipitation</dt>
-  <dd></dd>
-  <dt>Current Conditions</dt>
-  <dd></dd>
+  <dt> Temperature </dt>
+  <dd> <%= @user_temp %> </dd>
+  <dt> Humidity </dt>
+  <dd> <%= @user_humidity %> </dd>
+  <dt> Chance of Precipitation </dt>
+  <dd> <%= @user_precip %> </dd>
+  <dt> Current Conditions </dt>
+  <dd> <%= @user_current_conditions %> </dd>
 </dl>
-<h3>You should wear this: </h3>
+<h3> You should wear this: </h3>
 <ul>
   <li></li>
 </ul>
 <form action="/next_hour" method="post">
-  <button>Check Conditions for Next Hour</button>
+  <button> Check Conditions for Next Hour </button>
 </form>
 <form action="/">
-  <button>Choose New Location</button>
+  <button> Choose New Location </button>
 </form>
