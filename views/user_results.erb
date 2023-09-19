@@ -1,0 +1,24 @@
+<h3>Current Conditions</h3>
+<%= params %>
+<dl>
+  <dt>Location</dt>
+  <dd> <%= @user_loc %> </dd>
+  <dt>Temperature</dt>
+  <dd></dd>
+  <dt>Humidity</dt>
+  <dd></dd>
+  <dt>Chance of Precipitation</dt>
+  <dd></dd>
+  <dt>Current Conditions</dt>
+  <dd></dd>
+</dl>
+<h3>You should wear this: </h3>
+<ul>
+  <li></li>
+</ul>
+<form action="/next_hour">
+  <button>Check Conditions for Next Hour</button>
+</form>
+<form action="/">
+  <button>Check Conditions for New Location</button>
+</form>
