@@ -45,8 +45,9 @@ post("/results") do
 
   @user_temp = @currently_hash.fetch("temperature")
   @user_humidity = @currently_hash.fetch("humidity")
-  @user_precip = @currently_hash.fetch("precipProbability")
+  @user_precip_chance = @currently_hash.fetch("precipProbability")
   @user_current_conditions = @currently_hash.fetch("summary")
+  @user_precip_type = @currently_hash.fetch("precipType")
 
   
 
