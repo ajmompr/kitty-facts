@@ -58,7 +58,7 @@ post("/results") do
 
   # bottom clothing items
 
-  @hot_bottoms = ["Shorts", "Running tights", "Thermal running tights"]
+  @hot_bottoms = ["Shorts"]
 
   @medium_bottoms = ["Runing Tights"]
 

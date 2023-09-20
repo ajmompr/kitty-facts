@@ -34,7 +34,7 @@
     <li> <%= tops %> </li> 
     <% end %>
    <% elsif @user_temp > 70 && @user_temp <= 98.6  %>
-    <% @medium_tops.each do |tops| %>
+    <% @hot_tops.each do |tops| %>
     <li> <%= tops %> </li> 
     <% end %>
   <% end %> 
@@ -51,7 +51,7 @@
     <li> <%= bottoms %> </li> 
     <% end %>
    <% elsif @user_temp > 70 && @user_temp <= 98.6  %>
-    <% @medium_bottoms.each do |bottoms| %>
+    <% @hot_bottoms.each do |bottoms| %>
     <li> <%= bottoms %> </li> 
     <% end %>
   <% end %> 
