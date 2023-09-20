@@ -51,7 +51,7 @@ post("/results") do
 
   # top clothing items
   @cold_tops = ["Thermal base layer", "Long-sleeved top", "Light jacket"]
-  
+
   @medium_tops = ["Shirt", "Long-sleeved pullover"] 
   
   @hot_tops = ["Singlet and/or Sports bra"]
@@ -62,7 +62,7 @@ post("/results") do
 
   @medium_bottoms = ["Runing Tights"]
 
-  @cold_bottoms = 
+  @cold_bottoms = ["Running Tights", "Shorts (over running tights)"]
 
   # head gear items
   @head_gear = ["Cap", "none"]
