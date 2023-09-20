@@ -10,7 +10,7 @@ post("/cat_fact") do
   
   @cat_fact_url = "https://meowfacts.herokuapp.com/"
 
-  # Place Get request to Random Dog facts API
+  # Place Get request to Random Cat facts API
   @raw_resp_cat = HTTP.get(@cat_fact_url)
 
   @parsed_resp_cat = JSON.parse(@raw_resp_cat)
