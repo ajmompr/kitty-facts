@@ -7,7 +7,7 @@ get("/") do
 end
 
 post("/results") do
-  @user_loc = params.fetch("user_location").capitalize
+  @user_loc = params.fetch("user_location").upcase
   @user_loc_encoded = @user_loc.gsub(" ","+")
 
   # Assemble google geocode API URL

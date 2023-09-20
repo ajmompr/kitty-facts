@@ -1,7 +1,7 @@
 <h1> What to Wear on Your Run! </h1>
-<h3> Current Conditions </h3>
 
-<%= %>
+<div class="current_cond_list">
+<h3> Current Conditions </h3>
 <dl>
   <dt> Location </dt>
   <dd> <%= @user_loc %> </dd>
@@ -16,6 +16,9 @@
   <dt> Current Conditions </dt>
   <dd> <%= @user_current_conditions %> </dd>
 </dl>
+</div>
+
+<div class="wear_list">
 <h3> You should wear this: </h3>
 <h5> Always Bring </h5>
 <ul>
@@ -75,6 +78,7 @@
   <% else %>
   <li> None </li>
   <% end %> 
-</ul> 
+</ul>
+</div> 
 
-<a href="/"> Choose New Location </a>
+<button href="/" class="location_button" type="submit"> Choose New Location </button>
