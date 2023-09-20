@@ -6,6 +6,27 @@ get("/") do
   erb(:homepage)
 end
 
+post("/cat_fact") do
+  
+  @cat_fact_url = "https://meowfacts.herokuapp.com/"
+
+  # Place Get request to Random Dog facts API
+  @raw_resp_cat = HTTP.get(@cat_fact_url)
+
+  @parsed_resp_cat = JSON.parse(@raw_resp_cat)
+  
+  @data_array = @parsed_resp_cat.fetch("data")
+
+  @cat_fact = @data_array.fetch(0)
+
+  erb(:cat_fact_results)
+  
+
+end
+
+
+
+=begin
 post("/results") do
   @user_loc = params.fetch("user_location").upcase
   @user_loc_encoded = @user_loc.gsub(" ","+")
@@ -75,8 +96,4 @@ post("/results") do
   
   erb(:user_results)
 end
-
-post("/next_hour") do
-  "hello, next hour"
-  erb(:next_hr_results)
-end
+=end
