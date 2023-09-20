@@ -34,7 +34,7 @@ post("/results") do
   # Assemble pirate weather API url
   @pirate_url = "https://api.pirateweather.net/forecast/" + ENV.fetch("PIRATE_WEATHER_KEY") + "/" + @user_lat.to_s + "," + @user_lng.to_s
   
-  # Plage GET request to pirate weather
+  # Place GET request to pirate weather
   @raw_resp_pirate = HTTP.get(@pirate_url)
 
   # Parse response
@@ -49,8 +49,29 @@ post("/results") do
   @user_current_conditions = @currently_hash.fetch("summary")
   @user_precip_type = @currently_hash.fetch("precipType")
 
+  # top clothing items
+  @cold_tops = ["Thermal base layer", "Long-sleeved top", "Light jacket"]
   
+  @medium_tops = ["Shirt", "Long-sleeved pullover"] 
+  
+  @hot_tops = ["Singlet and/or Sports bra"]
 
+  # bottom clothing items
+
+  @hot_bottoms = ["Shorts", "Running tights", "Thermal running tights"]
+
+  @medium_bottoms = ["Runing Tights"]
+
+  @cold_bottoms = 
+
+  # head gear items
+  @head_gear = ["Cap", "none"]
+
+  @cold_head_gear = "Beanie"
+
+  # hand gear items
+  @hand_gear = ["Wind/waterproof gloves", "Insulated, Moisture wicking gloves"]
+  
   erb(:user_results)
 end
 

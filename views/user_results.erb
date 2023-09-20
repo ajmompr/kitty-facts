@@ -17,12 +17,40 @@
   <dd> <%= @user_current_conditions %> </dd>
 </dl>
 <h3> You should wear this: </h3>
+<h5> Always Bring </h5>
+<ul>
+  <li> Photo ID </li>
+  <li> Medical Condition Card (if applicable) </li>
+  <li> Health Insurance Card (if applicable) </li>
+</ul>
+<h5> Tops </h5>
+<ul>
+  <% if @user_temp <= 40 %>
+    <% @cold_tops.each do |tops| %>
+    <li> <%= tops %></li>
+    <% end %>
+  <% elsif @user_temp > 40 && @user_temp <= 70 %> 
+    <% @medium_tops.each do |tops| %>
+    <li> <%= tops %> </li> 
+    <% end %>
+   <% elsif @user_temp > 70 && @user_temp <= 98.6  %>
+    <% @medium_tops.each do |tops| %>
+    <li> <%= tops %> </li> 
+    <% end %>
+  <% end %> 
+</ul>
+
+<h5> Bottoms </h5>
+<ul>
+  <li> </li>
+</ul>
+<h5> Head Gear </h5>
+<ul>
+  <li> None OR Cap/Visor if you prefer </li>
+  <li> Cap  </li>
+
+</ul>
+<h5> Hand Gear </h5>
 <ul>
   <li></li>
 </ul>
-<form action="/next_hour" method="post">
-  <button> Check Conditions for Next Hour </button>
-</form>
-<form action="/">
-  <button> Choose New Location </button>
-</form>
