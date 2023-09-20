@@ -42,7 +42,7 @@
 
 <h5> Bottoms </h5>
 <ul>
-<% if @user_temp <= 40 %>
+  <% if @user_temp <= 40 %>
     <% @cold_bottoms.each do |bottoms| %>
     <li> <%= bottoms %></li>
     <% end %>
@@ -56,12 +56,18 @@
     <% end %>
   <% end %> 
  </ul> 
+
 <h5> Head Gear </h5>
 <ul>
-  <li> None OR Cap/Visor if you prefer </li>
-  <li> Cap  </li>
+  <% if @user_temp <= 40 %>
+    <% @cold_head_gear.each do |gear| %>
+    <li> <%= gear %></li>
+    <% end %>
+  <% else %>
+    <li> <%= @head_gear %> </li>
+  <% end %> 
+ </ul> 
 
-</ul>
 <h5> Hand Gear </h5>
 <ul>
   <li></li>

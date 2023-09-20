@@ -65,7 +65,7 @@ post("/results") do
   @cold_bottoms = ["Running Tights", "Shorts (over running tights)"]
 
   # head gear items
-  @head_gear = ["Cap", "none"]
+  @head_gear = "Cap"
 
   @cold_head_gear = "Beanie"
 
