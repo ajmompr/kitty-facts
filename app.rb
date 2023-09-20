@@ -70,7 +70,8 @@ post("/results") do
   @cold_head_gear = "Beanie"
 
   # hand gear items
-  @hand_gear = ["Wind/waterproof gloves", "Insulated, Moisture wicking gloves"]
+  @wet_hand_gear = "Wind/waterproof gloves"
+  @cold_hand_gear = "Insulated, Moisture wicking gloves"
   
   erb(:user_results)
 end

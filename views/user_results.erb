@@ -60,15 +60,19 @@
 <h5> Head Gear </h5>
 <ul>
   <% if @user_temp <= 40 %>
-    <% @cold_head_gear.each do |gear| %>
-    <li> <%= gear %></li>
-    <% end %>
+  <li> <%= @cold_head_gear %> </li>
   <% else %>
-    <li> <%= @head_gear %> </li>
-  <% end %> 
- </ul> 
+  <li> <%= @head_gear %> </li>
+  <% end %>
+</ul>
 
 <h5> Hand Gear </h5>
 <ul>
-  <li></li>
-</ul>
+  <% if @user_temp <= 40  && @precipProbability.to_f < 0.4 %>
+  <li> <%= @cold_hand_gear %></li>
+  <% elsif @user_temp > 40 && @precipProbability.to_f >= 0.4 %>
+  <li> <%= @wet_hand_gear %> </li>
+  <% else %>
+  <li> None </li>
+  <% end %> 
+</ul> 
