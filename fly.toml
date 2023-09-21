@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for what-to-wear on 2023-09-20T02:29:54Z
+# fly.toml app configuration file generated for cat-facts-generator on 2023-09-21T01:45:45Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = "what-to-wear"
+app = "cat-facts-generator"
 primary_region = "ord"
 
 [build]
