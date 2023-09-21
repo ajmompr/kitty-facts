@@ -1,5 +1,9 @@
 /* Layout Styling */
 
+* {
+  outline: 1px solid red;
+}
+
 body {
   font-family: "Balsamiq Sans";
   background: #FFF7EB;
@@ -16,9 +20,53 @@ body {
 
 
 /* Home Page styling */
+
 .cat-image {
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+.logo {
+  height: 250px;
+  width:  auto;
+}
+
+.homepage-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.button {
+  background: ;
+}
+
+.pushable {
+  font-family: Balsamiq Sans;
+  background: #B26D80;
+  border-radius: 12px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+}
+.front {
+  display: block;
+  padding: 12px 42px;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  background: #DB889F;
+  color: white;
+  transform: translateY(-6px);
+}
+
+.pushable:active .front {
+  transform: translateY(-2px);
 }
 
 a:link {
