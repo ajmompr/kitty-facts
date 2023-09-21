@@ -1,3 +1,3 @@
 # kitty-facts
 
-This app generates a new cat fact
+This app generates a random cat fact
