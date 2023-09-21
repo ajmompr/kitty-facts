@@ -1,12 +1,10 @@
 /* Layout Styling */
 
-* {
-  outline: 1px solid red;
-}
+
 
 body {
   font-family: "Balsamiq Sans";
-  background: #FFF7EB;
+  background: #fff7eb;
 }
 
 .header {
