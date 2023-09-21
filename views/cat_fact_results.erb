@@ -1,13 +1,9 @@
-<section class="header" id="cat-facts-header">
-  <h1 class="inner-header"> <a href="/" class="home-page-link"> Cat Facts! </a> </h1>
-</section>
+<h3 class = "random-cat-fact"> Random Cat Fact </h3>
 
-<ul>
-  <li> <%= @cat_fact %> </li>
-</ul>
+<p class="cat-fact-text"> <%= @cat_fact %> </p>
 
-<form action="/cat_fact" method="post">
-  <button> Get Another Cat Fact </button>
+<form action="/cat_fact" method="post" class ="results-form">
+  <button class="pushable" role="button">
+    <span class="front"> Get Another Cat Fact! </span>
+  </button>
 </form>
-
-<a href="/"> Go to Homepage </a>
