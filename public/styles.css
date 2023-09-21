@@ -1,7 +1,4 @@
 /* Layout Styling */
-
-
-
 body {
   font-family: "Balsamiq Sans";
   background: #fff7eb;
@@ -40,10 +37,36 @@ body {
   flex-wrap: wrap;
 }
 
-.button {
-  background: ;
+/* Cat Fact Results Page */
+
+.random-cat-fact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
+.cat-fact-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.results-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+
+/* Button Styling */
 .pushable {
   font-family: Balsamiq Sans;
   background: #B26D80;
@@ -67,6 +90,7 @@ body {
   transform: translateY(-2px);
 }
 
+/* Link Styling */
 a:link {
   color:#FFF7EB;
   text-decoration: none;
